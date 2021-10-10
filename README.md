@@ -26,56 +26,51 @@ Butts J, Wendt C, Bowler R, Hersh C P, Long Q, Eberly L, and Safo S. "Accounting
 An application to Chronic Obstructive Pulmonary Disease" Submitted.
 
 4.Please send your comments and bugs to ssafo@umn.edu.
-%--------------------------------------------------------------------------
-%--------------------------------------------------------------------------
+
 
 These are the main functions in this package found in main_functions.py:
-%--------------------------------------------------------------------------
-%optimize_torch: function to perform HIP for fixed tuning parameters
-%Outputs dict with estimated B, G, Xi, Z, and theta matrices along with 
-% BIC, training mse/accuracy, convergence message, and lambda parameters 
-%
-%DESCRIPTION:
-%It is recommended to use optimize_torch to obtain lower and upper bounds for 
-% the tuning parameters since too large tuning parameters will result in 
-% trivial solution vector (all zeros) and too small may result in
-% non-sparse solutions. 
-%
-%USAGE:
-%See HIP_examples.py for example usage.
-%--------------------------------------------------------------------------
 
-%--------------------------------------------------------------------------
-%select_lambda: select optimal tuning parameters for HIP by searching over 
-% specified range.
-%
-%DESCRIPTION:
-%Function selects optimal tuning parameter based on grid or random search 
-% using AIC and BIC as selection criteria.
-%If you want to apply optimal tuning parameters to testing data, you may
-% also use optimize_torch. 
-%
-%USAGE:
-%See HIP_examples.py for example usage.
-%--------------------------------------------------------------------------
+1. optimize_torch: function to perform HIP for fixed tuning parameters
 
-%--------------------------------------------------------------------------
-%generate_data: Generate example data to run the method on.
-%
-%DESCRIPTION:
-%Function generates data with specified numbers of important variables and 
-% specified overlap in variables between subgroups.
-%
-%USAGE:
-%See HIP_examples.py for example usage.
-%--------------------------------------------------------------------------
+Outputs  estimated B, G, Xi, Z, and theta matrices along with 
+BIC, training mse/accuracy, convergence message, and lambda parameters 
 
-%--------------------------------------------------------------------------
+DESCRIPTION:
+
+It is recommended to use optimize_torch to obtain lower and upper bounds for 
+the tuning parameters since too large tuning parameters will result in 
+trivial solution vector (all zeros) and too small may result in
+non-sparse solutions. 
+
+USAGE:
+See HIP_examples.py for example usage.
+
+2. select_lambda: select optimal tuning parameters for HIP by searching over 
+specified range.
+
+DESCRIPTION:
+Function selects optimal tuning parameter based on grid or random search 
+using AIC and BIC as selection criteria.
+If you want to apply optimal tuning parameters to testing data, you may
+also use optimize_torch. 
+
+USAGE:
+See HIP_examples.py for example usage.
+
+3. generate_data: Generate example data to run the method on.
+
+DESCRIPTION:
+Function generates data with specified numbers of important variables and 
+ specified overlap in variables between subgroups.
+
+USAGE:
+See HIP_examples.py for example usage.
+%
 %train_mse: function to calculate the mse using training data
 %
 %USAGE:
-%See HIP_examples.py for example usage.
-%--------------------------------------------------------------------------
+See HIP_examples.py for example usage.
+--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
 %test_mse: function to calculate the mse using test data and fitted 
