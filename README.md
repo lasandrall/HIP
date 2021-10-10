@@ -102,17 +102,24 @@ These are the main functions in this package found in main_functions.py:
 
 %--------------------------------------------------------------------------
 %HIP_examples.py: You can do the following:
+
 % 1. Can use generate_data to generate data under differing scenarios
+
 % 2. Can use optimize_torch for any fixed tuning parameter value to 
 %    obtain estimates of B, G, Xi, Z, and theta
+
 % 3. Can use select_lambda to select optimal tuning parameters using a grid
 %    or random search
+
 % 4. Can use train_mse to calculate training error after fitting a model 
 %    with continuous outcome(s)
+
 % 5. Can use test_mse to calculate testing error after fitting a model 
 %    with continuous outcomes(s)
+
 % 6. Can use train_class to calculate training error after fitting a model
 %    with multiclass outcome
+
 % 7. Can use test_class to calculate training error after fitting a model
 %    with multiclass outcome
 %--------------------------------------------------------------------------
