@@ -30,7 +30,7 @@ An application to Chronic Obstructive Pulmonary Disease" Submitted.
 
 These are the main functions in this package found in main_functions.py:
 
-1. optimize_torch: function to perform HIP for fixed tuning parameters
+i) optimize_torch: function to perform HIP for fixed tuning parameters
 
 Outputs  estimated B, G, Xi, Z, and theta matrices along with 
 BIC, training mse/accuracy, convergence message, and lambda parameters 
@@ -45,7 +45,7 @@ non-sparse solutions.
 USAGE:
 See HIP_examples.py for example usage.
 
-2. select_lambda: select optimal tuning parameters for HIP by searching over 
+ii) select_lambda: select optimal tuning parameters for HIP by searching over 
 specified range.
 
 DESCRIPTION:
@@ -57,7 +57,7 @@ also use optimize_torch.
 USAGE:
 See HIP_examples.py for example usage.
 
-3. generate_data: Generate example data to run the method on.
+iii) generate_data: Generate example data to run the method on.
 
 DESCRIPTION:
 Function generates data with specified numbers of important variables and 
@@ -70,33 +70,24 @@ See HIP_examples.py for example usage.
 %
 %USAGE:
 See HIP_examples.py for example usage.
---------------------------------------------------------------------------
 
-%--------------------------------------------------------------------------
-%test_mse: function to calculate the mse using test data and fitted 
-% model
-%
-%USAGE:
-%See HIP_examples.py for example usage.
-%--------------------------------------------------------------------------
+iv) test_mse: function to calculate the mse using test data and fitted  model
 
-%--------------------------------------------------------------------------
-%train_class: function to calculate the classification accuracy using training data
-%
-%USAGE:
-%See HIP_examples.py for example usage.
-%--------------------------------------------------------------------------
+USAGE:
+See HIP_examples.py for example usage.
 
-%--------------------------------------------------------------------------
-%test_class: function to calculate the classification accuracy using test data and fitted 
-% model
-%
-%USAGE:
-%See HIP_examples.py for example usage.
-%--------------------------------------------------------------------------
+v)train_class: function to calculate the classification accuracy using training data
 
-%--------------------------------------------------------------------------
-HIP_examples.py: You can do the following:
+USAGE:
+See HIP_examples.py for example usage.
+
+vi) test_class: function to calculate the classification accuracy using test data and fitted 
+ model
+
+USAGE:
+See HIP_examples.py for example usage.
+
+vii) HIP_examples.py: You can do the following:
 
  1. Can use generate_data to generate data under differing scenarios
 
@@ -117,6 +108,6 @@ HIP_examples.py: You can do the following:
 
  7. Can use test_class to calculate training error after fitting a model
     with multiclass outcome
---------------------------------------------------------------------------
+
 
 
