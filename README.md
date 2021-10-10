@@ -2,7 +2,7 @@
 Epidemiologic and genetic studies for many complex diseases suggest subgroup disparities (e.g., by sex). We consider this problem from the standpoint of integrative analysis where we combine information from different views (e.g., genomics, proteomics, clinical data). Existing integrative analysis methods ignore the heterogeneity in subgroups, and stacking the views and accounting for subgroup heterogeneity does not model the association among the views. We propose a statistical approach for joint association and prediction that leverages the strengths in each view to identify variables that are shared by and specific to different subgroups (e.g., males and females) and that contribute to the variation in the outcome of interest. HIP (Heterogeneity in Integration and Prediction) accounts for subgroup heterogeneity, allows for sparsity in variable selection, is applicable to multi-class and to univariate or multivariate continuous outcomes, and incorporates covariate adjustment. We develop efficient algorithms in PyTorch. 
 
 
-1.This package depends on the following Python modules:
+1. This package depends on the following Python modules:
 - torch
 - numpy
 - random
@@ -25,7 +25,7 @@ Please cite this paper if you use the code for your research purpose.
 Butts J, Wendt C, Bowler R, Hersh C P, Long Q, Eberly L, and Safo S. "Accounting for data heterogeneity in integrative analysis and prediction methods: 
 An application to Chronic Obstructive Pulmonary Disease" Submitted.
 
-4.Please send your comments and bugs to ssafo@umn.edu.
+4. Please send your comments and bugs to ssafo@umn.edu.
 
 
 These are the main functions in this package found in main_functions.py:
@@ -65,29 +65,29 @@ Function generates data with specified numbers of important variables and
 
 USAGE:
 See HIP_examples.py for example usage.
-%
-%train_mse: function to calculate the mse using training data
-%
-%USAGE:
-See HIP_examples.py for example usage.
 
-iv) test_mse: function to calculate the mse using test data and fitted  model
+iv) train_mse: function to calculate the mse using training data
 
 USAGE:
 See HIP_examples.py for example usage.
 
-v)train_class: function to calculate the classification accuracy using training data
+v) test_mse: function to calculate the mse using test data and fitted  model
 
 USAGE:
 See HIP_examples.py for example usage.
 
-vi) test_class: function to calculate the classification accuracy using test data and fitted 
+vi)train_class: function to calculate the classification accuracy using training data
+
+USAGE:
+See HIP_examples.py for example usage.
+
+vii) test_class: function to calculate the classification accuracy using test data and fitted 
  model
 
 USAGE:
 See HIP_examples.py for example usage.
 
-vii) HIP_examples.py: You can do the following:
+viii) HIP_examples.py: You can do the following:
 
  1. Can use generate_data to generate data under differing scenarios
 
