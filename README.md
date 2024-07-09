@@ -3,12 +3,12 @@ We propose a statistical approach for joint association of data from multiple vi
 
 A Shiny App for HIP can be found at: https://multi-viewlearn.shinyapps.io/HIP_ShinyApp/
 
-The R-package HIP can be read as (after installing devtools)
+**The R-package HIP can be read as (after installing devtools)**
 
 install_github("lasandrall/HIP/HIP")
 
 
-Please follow the following instructions to implement the python version of HIP.
+**Please follow the following instructions to implement the python version of HIP.**
 
 1. This package depends on the following Python modules:
 - torch
